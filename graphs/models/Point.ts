@@ -1,24 +1,21 @@
-namespace graphs.models
-{
-    export class Point
-    {
-        
-        private _x : number;
-        public get x() : number {
+namespace graphs.models {
+    export class Point {
+        private _x: number;
+        public get x(): number {
             return this._x;
         }
-        public set x(v : number) {
+        public set x(v: number) {
             this._x = v;
         }
-        
-        private _value : number;
-        public get value() : number {
-            return this._value;
+
+        private _y: number;
+        public get y(): number {
+            return this._y;
         }
-        public set value(v : number) {
-            this._value = v;
+        public set y(v: number) {
+            this._y = v;
         }
-        
+
     }
 
 }
