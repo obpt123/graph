@@ -27,3 +27,15 @@ gulp.task('tsc-test',function(){
     .js.pipe(gulp.dest('./temp/test'));
 });    
 gulp.task('default',['lint','tsc']);
+
+gulp.task('tt',function(){
+    return gulp.src('./**/*.ts')
+        .pipe(gulp.dest("abc.ts"));
+});
+
+gulp.task('watch',function(){
+    gulp.watch('**/*.ts',function(event){
+        console.log(event.path);
+        console.log(event.type);
+    });
+})

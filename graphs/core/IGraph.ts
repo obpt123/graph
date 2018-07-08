@@ -6,4 +6,5 @@ namespace graphs {
         render(context: IGraphContext): void;
 
     }
+
 }
